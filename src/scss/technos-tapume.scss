@@ -1,0 +1,564 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('../fonts/Gotham-Bold.woff') format('woff'), /* Modern Browsers */
+     url('../fonts/Gotham-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/Gotham-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+   font-weight: 700;
+   font-style: normal;
+ }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Medium.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('../fonts/Gotham-Medium.woff') format('woff'), /* Modern Browsers */
+     url('../fonts/Gotham-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/Gotham-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+   font-weight: 400;
+   font-style: normal;
+ }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Thin.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Gotham-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('../fonts/Gotham-Thin.woff') format('woff'), /* Modern Browsers */
+     url('../fonts/Gotham-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/Gotham-Thin.svg#svgFontName') format('svg'); /* Legacy iOS */
+   font-weight: 300;
+   font-style: normal;
+ }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  body {
+    &.connect {
+      &.tapume {
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-family: "Gotham";
+        text-transform: uppercase;
+
+        .icon {
+            float: left;
+            margin-left: 15px;
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            background-size: cover;
+            position: relative;
+            top: -23px;
+            cursor: pointer;
+
+            &.face  {
+              background-image: url(https://technos.vteximg.com.br/arquivos/tc-tapume-NORMALface.png);
+            }
+
+            &.insta {
+                background-image: url(https://technos.vteximg.com.br/arquivos/tc-tapume-NORMALinsta.png);
+            }
+
+            &.chat {
+              background-image: url(https://technos.vteximg.com.br/arquivos/tc-tapume-NORMALchat.png);
+          }
+
+          &.btn-technos {
+              background-image: url(https://technos.vteximg.com.br/arquivos/tc-tapume-LOGObtn-technos.png);
+          }
+        }
+
+        .tapume-wrapp  {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background-color: red;
+          background-image: url(https://technos.vteximg.com.br/arquivos/tc-tapume-SHADOWSbtn-technos.png);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+          min-height: 656px;
+
+          .logo-top {
+            width: 247px;
+            height: 52px;
+            margin-top: 5vh;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: url(https://technos.vteximg.com.br/arquivos/tc-tapume-LOGObtn-top-technos.png);
+            background-repeat: no-repeat;
+          }
+
+          .intro-message {
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            width: 80%;
+            font-size: 1rem;
+            text-align: center;
+            font-weight: 300;
+            margin-top: 5vh;
+          }
+
+
+          .main-message {
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            width: 80%;
+            font-size: 2.4rem;
+            text-align: center;
+            font-weight: 900;
+            word-break: break-word;
+
+          }
+
+
+          .last-message {
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            width: 80%;
+            font-size: 1rem;
+            text-align: center;
+            font-weight: 300;
+          }
+
+          .form-wrapp {
+
+            p {
+              margin-left: auto;
+              margin-right: auto;
+              height: auto;
+              width: 80%;
+              font-size: 1rem;
+              text-align: center;
+              font-weight: 300;
+            }
+
+            form {
+              margin-left: auto;
+              margin-right: auto;
+              max-width: 300px;
+              height: auto;
+
+              input {
+                color: black;
+                width: 55%;
+                height: 47px;
+                padding-left: 12px;
+              }
+
+              button {
+                max-width: 100px;
+                padding: 10px;
+                height: 47px;
+                background-color: #c41d17;
+                outline: none;
+                border: none;
+                color: white;
+                font-weight: bold;
+                text-transform: uppercase;
+              }
+            }
+          }
+
+          .logo-bottom {
+            display: none;
+          }
+
+
+          .menu {
+            display: none;
+          }
+
+          .menu-mobile {
+            width: 100%;
+            height: 60px;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            ul {
+              list-style: none;
+              min-width: 200px;
+              padding: 0;
+              margin: 0;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  body {
+    &.connect {
+      &.tapume {
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-family: "Gotham";
+        text-transform: uppercase;
+
+        .icon {
+            float: left;
+            margin-left: 15px;
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            background-size: cover;
+            position: relative;
+            top: -23px;
+            cursor: pointer;
+
+            &.face  {
+              background-image: url(https://technos.vteximg.com.br/arquivos/tc-tapume-NORMALface.png);
+            }
+
+            &.insta {
+                background-image: url(https://technos.vteximg.com.br/arquivos/tc-tapume-NORMALinsta.png);
+            }
+
+            &.chat {
+              background-image: url(https://technos.vteximg.com.br/arquivos/tc-tapume-NORMALchat.png);
+          }
+
+          &.btn-technos {
+              background-image: url(https://technos.vteximg.com.br/arquivos/tc-tapume-LOGObtn-technos.png);
+          }
+        }
+
+        .tapume-wrapp  {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background-color: red;
+          background-image: url(https://technos.vteximg.com.br/arquivos/tc-tapume-SHADOWSbtn-technos.png);
+          background-repeat: no-repeat;
+          background-position: center center;
+          min-height: 1177px;
+          background-size: cover;
+
+          .logo-top {
+            width: 247px;
+            height: 52px;
+            margin-top: 5vh;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: url(https://technos.vteximg.com.br/arquivos/tc-tapume-LOGObtn-top-technos.png);
+            background-repeat: no-repeat;
+          }
+
+          .intro-message {
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            width: 80%;
+            font-size: 1rem;
+            text-align: center;
+            font-weight: 300;
+            margin-top: 5vh;
+          }
+
+
+          .main-message {
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            width: 80%;
+            font-size: 5.4rem;
+            text-align: center;
+            font-weight: 900;
+
+          }
+
+
+          .last-message {
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            width: 80%;
+            font-size: 1rem;
+            text-align: center;
+            font-weight: 300;
+          }
+
+          .form-wrapp {
+
+            p {
+              margin-left: auto;
+              margin-right: auto;
+              height: auto;
+              width: 80%;
+              font-size: 1.5rem;
+              text-align: center;
+              font-weight: 300;
+            }
+
+            form {
+              margin-left: auto;
+              margin-right: auto;
+              max-width: 500px;
+              height: auto;
+
+              input {
+                color: black;
+                width: 78%;
+                height: 47px;
+                padding-left: 12px;
+              }
+
+              button {
+                width: 21%;
+                max-width: 100px;
+                padding: 10px;
+                height: 47px;
+                background-color: #c41d17;
+                outline: none;
+                border: none;
+                color: white;
+                font-weight: bold;
+                text-transform: uppercase;
+              }
+            }
+          }
+
+          .logo-bottom {
+            width: 200px;
+            height: 77px;
+            margin-top: 5vh;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: url(https://technos.vteximg.com.br/arquivos/tc-tapume-LOGObtn-bottom-technos.png);
+            background-repeat: no-repeat;
+          }
+
+
+          .menu {
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            .icon-body {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .icon-left {
+                width: 20%;
+            }
+
+           .icon-right{
+                .icon-body {
+                  float: right;
+                  margin-right: 19px;
+                }
+            }
+
+            .enreco {
+                width: 60%;
+                color: #777777;
+                line-height: 44px;
+                font-size: 11px;
+            }
+          }
+
+          .menu-mobile {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    &.connect {
+      &.tapume {
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-family: "Gotham";
+        text-transform: uppercase;
+
+        .icon {
+            float: left;
+            margin-left: 15px;
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            background-size: cover;
+            position: relative;
+            top: -23px;
+            cursor: pointer;
+
+            &.face  {
+              background-image: url(https://technos.vteximg.com.br/arquivos/tc-tapume-NORMALface.png);
+            }
+
+            &.insta {
+                background-image: url(https://technos.vteximg.com.br/arquivos/tc-tapume-NORMALinsta.png);
+            }
+
+            &.chat {
+              background-image: url(https://technos.vteximg.com.br/arquivos/tc-tapume-NORMALchat.png);
+          }
+
+          &.btn-technos {
+              background-image: url(https://technos.vteximg.com.br/arquivos/tc-tapume-LOGObtn-technos.png);
+          }
+        }
+
+        .tapume-wrapp  {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background-color: red;
+          background-image: url(https://technos.vteximg.com.br/arquivos/tc-tapume-SHADOWSbtn-technos.png);
+          background-repeat: no-repeat;
+          background-position: center center;
+          min-height: 1177px;
+          background-size: cover;
+
+          .logo-top {
+            width: 247px;
+            height: 52px;
+            margin-top: 5vh;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: url(https://technos.vteximg.com.br/arquivos/tc-tapume-LOGObtn-top-technos.png);
+            background-repeat: no-repeat;
+          }
+
+          .intro-message {
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            width: 80%;
+            font-size: 1rem;
+            text-align: center;
+            font-weight: 300;
+            margin-top: 5vh;
+          }
+
+
+          .main-message {
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            width: 80%;
+            font-size: 5.4rem;
+            text-align: center;
+            font-weight: 900;
+
+          }
+
+
+          .last-message {
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            width: 80%;
+            font-size: 1rem;
+            text-align: center;
+            font-weight: 300;
+          }
+
+          .form-wrapp {
+
+            p {
+              margin-left: auto;
+              margin-right: auto;
+              height: auto;
+              width: 80%;
+              font-size: 1.5rem;
+              text-align: center;
+              font-weight: 300;
+            }
+
+            form {
+              margin-left: auto;
+              margin-right: auto;
+              max-width: 500px;
+              height: auto;
+
+              input {
+                color: black;
+                width: 78%;
+                height: 47px;
+                padding-left: 12px;
+              }
+
+              button {
+                width: 21%;
+                max-width: 100px;
+                padding: 10px;
+                height: 47px;
+                background-color: #c41d17;
+                outline: none;
+                border: none;
+                color: white;
+                font-weight: bold;
+                text-transform: uppercase;
+              }
+            }
+          }
+
+          .logo-bottom {
+            width: 200px;
+            height: 77px;
+            margin-top: 5vh;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: url(https://technos.vteximg.com.br/arquivos/tc-tapume-LOGObtn-bottom-technos.png);
+            background-repeat: no-repeat;
+          }
+
+
+          .menu {
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            .icon-body {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .icon-left {
+                width: 20%;
+            }
+
+           .icon-right{
+                .icon-body {
+                  float: right;
+                  margin-right: 19px;
+                }
+            }
+
+            .enreco {
+                width: 60%;
+                color: #777777;
+                line-height: 44px;
+                font-size: 11px;
+            }
+          }
+
+          .menu-mobile {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

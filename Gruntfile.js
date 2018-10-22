@@ -28,6 +28,7 @@ module.exports = function(grunt) {
               ]
         },
         options: {
+            watchTask: true,
             server: {
                 baseDir: "./build"
             }
@@ -49,6 +50,14 @@ module.exports = function(grunt) {
         }
       }
     },
+    copy: {
+      main: {
+        expand: true,
+        cwd: 'src/fonts',
+        src: '**',
+        dest: 'build/fonts',
+      }
+    },
     watch: {
       options: {
         livereload: true
@@ -60,10 +69,7 @@ module.exports = function(grunt) {
       compass: {
         files: ['src/scss/**/*.scss'],
         tasks: ['compass']
-      },
-      files: [
-      path.resolve(__dirname, 'build') + '/{,*/}*.*'
-    ]
+      }
     }
   })
 
@@ -73,5 +79,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-express');
   grunt.loadNpmTasks('grunt-browser-sync');
-  grunt.registerTask('default', ['uglify', 'sass', 'compass', 'express','browserSync'])
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.registerTask('default', ['uglify', 'sass', 'compass','copy','browserSync', 'watch'])
 }
